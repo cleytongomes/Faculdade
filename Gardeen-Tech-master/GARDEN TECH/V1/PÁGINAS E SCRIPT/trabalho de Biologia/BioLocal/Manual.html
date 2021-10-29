@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <title>Bio</title>
+    <meta charset="utf-8" />
+    <link href="controle.php">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link href="CSS/Manual.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Galeria/normalize.css">
+    <link rel="stylesheet" href="Galeria/gallery.prefixed.css">
+    <link rel="stylesheet" href="Galeria/gallery.theme.css">
+    <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script type="text/javascript" src="./scripts/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#onLed").click(function(){
+                $.post("./PHP/onLed.php"); 
+            });
+            $("#offLed").click(function(){
+                $.post("./PHP/offLed.php"); 
+            });
+
+            $("#onCooler").click(function(){
+                $.post("./PHP/onCooler.php"); 
+            });
+
+            $("#offCooler").click(function(){
+                $.post("./PHP/offCooler.php"); 
+            });
+
+            $("#onBomba1").click(function(){
+                $.post("./PHP/onBomba1.php");     
+            });
+            $("#offBomba1").click(function(){
+                $.post("./PHP/offBomba1.php");     
+            });
+
+            $("#onBomba2").click(function(){
+                $.post("./PHP/onBomba2.php"); 
+            });
+            $("#offBomba2").click(function(){
+                $.post("./PHP/offBomba2.php");     
+            });
+
+        });
+    </script>
+</head>
+<header>
+
+    <div class="container">
+
+
+        <div class="logo">
+            <div id="lado1">
+                <img src="img/ladoCE.png" />
+            </div>
+            <div id="lado2">
+                <img src="img/ladoCD.png" /></div>
+            <br><img src="img/icofolha.png" />
+            <br>
+
+            <div id="lado3">
+                <img src="img/ladoBE.png" />
+            </div>
+            <div id="lado4">
+                <img src="img/ladoBD.png" />
+            </div>
+
+
+
+        </div>
+        <div id="titulo">
+            <img src="img/titulo.png" />
+        </div>
+    </div>
+    <div class="frame">
+
+        <ul>
+            <li>Bem vindo, ao nosso ambiente manual.</li>
+            <li>Bem vindo, ao nosso ambiente manual.</li>
+
+            <!--Bienvenido, en nuestro entorno manual.</li>-->
+            <!--				<li> Welcome, to our manual environment.</li>-->
+
+        </ul>
+    </div>
+</header>
+
+<body>
+    <main id="controle" style="background-image: url(img/placaFerro.jpg)">
+        <div id="area">
+            <div id="cntrlp1">
+                <h1>Controles</h1>
+
+                <div class="control-panel-frm" >
+                    <h3>LEDs:</h3>
+                    <input id="onLed" type='button' class="s3d turnOn" name='submitOn' value='ON'>
+                    <input id="offLed" type='button' class="s3d switchoff" name='submitOff' value='OFF'>
+                    <br>
+                    <br>
+                    <h3>Cooler:</h3>
+                    <input id="onCooler" type='button' class="s3d turnOn" name='submitOn1' value='ON'>
+                    <input id="offCooler" type='button' class="s3d switchoff" name='submitOff1' value='OFF'>
+                    <br>
+                    <br>
+                    <h3>Regador 1:</h3>
+                    <input id="onBomba1" type='button' class="s3d turnOn" name='submitOn2' value='ON'>
+                    <input id="offBomba1" type='button' class="s3d switchoff" name='submitOff2' value='OFF'>
+                    <br>
+                    <br>
+                    <h3>Regador 2:</h3>
+                    <input id="onBomba2" type='button' class="s3d turnOn" name='submitOn3' value='ON'>
+                    <input id="offBomba2" type='button' class="s3d switchoff" name='submitOff3' value='OFF'>
+
+
+                    <br>
+                    <br>
+
+
+                </div>
+            </div>
+            <div id="cntrlp2">
+                <h1>Valores</h1>
+
+                <div class="valores">Iluminação:</div>
+                <div class="valores">Temperatura:</div>
+                <div class="valores">Unidade solo 1:</div>
+                <div class="valores">Unidade solo 2:</div>
+                <div class="valores">Regador solo 1:</div>
+                <div class="valores">Regador solo 2:</div>
+                <div class="valores">Cooler:</div>
+                <div class="valores">leds:</div>
+
+
+            </div>
+        </div>
+        <div class="body">
+            <a href="#" class="btn-2">Fim de Plantação</a>
+            <a id="recarregar"type='submit' class="btn-2">Recarregar</a>
+            <br>
+        </div>
+    </main>
+</body>
+</body>
+<footer>
+    <p></p>
+</footer>
+
+</html>

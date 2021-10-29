@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+  font-size: 38px;
+  width: 500px;
+}
+
+html {
+    height: 100%;
+}
+
+#dicas{
+  position: fixed;
+  top:25px;
+  right:0px;
+}
+
+#dicas img{
+  width:35px;
+  height: 35px;
+}
+
+#menuLateral{
+  position: fixed;
+  top: 25px;
+  width:150px;
+  height: 35px;
+  margin-left: 35px;
+  background-color: white;
+}
+
+header {
+    margin-top: 200px;
+}
+
+body {
+    width: 100%;
+    background: linear-gradient(to bottom, #2E8B57, greenyellow);
+}
+
+header nav ul li span:hover {
+    color: greenyellow;
+}
+
+.container {
+    margin-top: -50px;
+}
+
+header>.container {
+    width: 590px;
+}
+
+header>div>div> img:nth-child(4) {
+    width: 90px;
+    position: relative;
+    top: -14px;
+    margin-bottom: -30px;
+}
+
+#lado1 {
+    width: 50%;
+    float: left;
+}
+
+#lado2 {
+    text-align: right;
+    width: 50%;
+    float: left;
+}
+
+#lado3 {
+    width: 50%;
+    float: left;
+}
+
+#lado4 {
+    width: 50%;
+    float: left;
+    text-align: right;
+}
+
+.logo {
+    width: 165px;
+    height: 165px;
+    /*    margin-left: 180px;*/
+    margin-top: 20px;
+    float: left;
+    animation-name: crecer;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.logo img:nth-child(4) {
+    margin-left: 37px;
+}
+
+@keyframes crecer {
+    0% {
+        width: 165px;
+    }
+    100% {
+        width: 570px;
+    }
+}
+
+#titulo {
+    height: 165px;
+    margin-top: 20px;
+}
+
+#titulo>img {
+    position: relative;
+    left: 130px;
+    opacity: 0.0;
+    margin-top: -190px;
+    animation-name: aparecer;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+.frame {
+    display: flex;
+    width: 320px;
+    height: 40px;
+    color: white;
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 50px;
+    opacity: 0.0;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    animation-name: aparecer;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+ul {
+    list-style: none;
+    padding-left: 10px;
+    animation: trocar 10s infinite;
+    animation-delay: 3s;
+}
+
+ul,
+p {
+    margin: 0;
+}
+
+@keyframes trocar {
+    0% {
+        margin-top: 0;
+    }
+    20% {
+        margin-top: 0;
+    }
+    25% {
+        margin-top: -40px;
+    }
+    50% {
+        margin-top: -40px;
+    }
+    55% {
+        margin-top: -80px;
+    }
+    80% {
+        margin-top: -80px;
+    }
+    85% {
+        margin-top: -40px;
+    }
+    95% {
+        margin-top: -40px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+
+
+/*-----------------------------------------------------*/
+
+.body {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 300px;
+    left: 0;
+    text-align: center;
+}
+
+.body span {
+    font-size: 25px;
+}
+
+body a:nth-child(2),
+body a:first-child {
+    margin-top: 150px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+body a:first-child {
+    margin-right: 50px;
+}
+
+body a:last-child {
+    width: 400px;
+    padding: 0;
+    padding-left: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-top: 30px;
+    margin-left: 50px;
+    text-align: left;
+    font-size: 20px;
+}
+
+body a {
+    width: 150px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 15px 20px;
+    box-shadow: 0 2px 3px #777;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+body a:hover {
+    background-color: #fff;
+    text-decoration: none;
+    color: #777;
+    box-shadow: 0 2px 3px #777;
+}
+

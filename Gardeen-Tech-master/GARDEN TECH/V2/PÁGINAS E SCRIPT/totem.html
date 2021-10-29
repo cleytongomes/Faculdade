@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+
+
+    <title>GardenTech</title>
+    <meta charset="utf-8" />
+    <link href="CSS/totem.css" rel="stylesheet" /> 
+    <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="jquery-3.1.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            //Efeito nos botões
+            $(".topicos").mouseover(function(){
+                $(this).css("background-color", "rgba(255,255,255,0.2)")            
+            })
+            $(".topicos").mouseout(function(){
+                $(this).css("background-color", "rgba(255, 255, 255, 0.0)")
+            });
+
+
+            //Codigo do modal
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on the button, open the modal
+            $(".topicos").click(function(){
+                modal.style.display = "block";
+            });
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+
+
+
+
+            //Modais 
+
+            
+
+            $("#crescimentoVegetal").click(function(){
+                $(".modal-content").css("color", "#343439");
+                $(".modal-content").css("background-image", "url(img/tree.jpg)");
+                $(".modal-content").css("background-size", "350px 430px")
+
+                $("#p1").text("Uma das principais reações químicas responsáveis pelo desenvolvimento vegetal é a fotossíntese. Nela a espécie converte gás carbônico e água em glicose e oxigênio, porém essa é uma reação que não ocorre de forma espotânea. Para que a fotossíntese ocorra, uma energia de ativação é necessária, sendo, na natureza, proveniente do sol. No GardenTech, essa energia vinda do sol é sustituida pela vinda dos leds. Junto a isso, o sistema também possui um módulo regador responsável pela irrigação que, quando no modo automático, fornece a quantidade ideal de água no momento certo garantindo o desenvolvimento saudável das espécies cultivada.");
+                $("#p2").text(""); 
+                $("#img2").hide();   
+            })
+
+
+            $("#iluminacao").click(function(){
+                $(".modal-content").css("color", "white")
+                $(".modal-content").css("background-image", "url(img/leds.jpg)");
+                $(".modal-content").css("background-size", "1200px 700px");
+
+                $("#p1").text("A luz é fundamental para a fotossíntese e para a germinação de algumas espécies. Cientes dessa grande importância, desenvolvemos um sistema de iluminação bem variado e capaz de suprir as principais necessidades das espécies por nós estudadas. O GardenTech apresenta diferentes conbinações de luz para diferentes situações, como por exemplo um setup que mistura leds vermelhos e azuis para garatir a germinação e desenvolvimetno de espécies fotoblástivas positivas e um apenas com leds azuis para fotoblástivas negativas.");
+                $("#p2").text("");  
+                $("#img2").hide(); 
+            })
+            
+
+            $("#irrigacao").click(function(){
+                $(".modal-content").css("color", "rgba(250,250,250, 0.8)")
+                $(".modal-content").css("background-image", "url(img/water.jpg)");
+                $(".modal-content").css("background-size", "365px 285px");
+
+                $("#p1").text("Além do fornecimento e energia luminosa, cabe ao GardenTech fornecer também a água necessária aos processos fisiológicos vegetais. Dessa forma, o sistema de irrigação faz a captção da água da chuva e direciona aos diferentes reservatórios que diregem a água capturada até as espécies cultivadas. Por usar água da chuva, um sistema de neutralização de pH está sendo desenvolvido e pretendemos neutralizar as comuns chuvas ácidas pela utilização do carbonato de cálcio. Caso não haja água de chuva disponível, o sistema utiliza água da própria residência para irrigar a plantação.");
+                $("#p2").text("");    
+                $("#img2").hide();
+            })
+
+            
+            $("#temperatura").click(function(){
+                $(".modal-content").css("color", "#343439");
+                $(".modal-content").css("background-image", "none");
+                $(".modal-content").css("background", "linear-gradient(to bottom, lightgreen, aqua)");
+                $("#img2").attr("src", "img/temperature.png");
+                $("#img2").attr("height", "150px");
+                $("#img2").attr("width", "150px");
+                $("#img2").css("float", "right");
+                $("#img2").css("position", "relative");
+                $("#img2").css("top", "-20px");
+                $(".modal-content").css("background", "none)");
+                $(".modal-content").css("background-size", "300px 300px");
+
+                $("#p1").text("Para um eficiente controle térmico, o GardenTech conta com sensores de temperatura que mandam alertas caso as temperaturas não sejam adequadas ao desenvolvimento da espécie cultivada. O sistema de iluminação também foi criado utilizando leds numa proporção que o calor dissipado por eles não cause danos à platação. Por fim, um sistema de ventilação feito com o uso de coolers também atua no controle térmico, além de logicamente contribuir para a circulação de ar no ambiente.");
+                $("#p2").text("");
+                $("#img2").show();    
+            })
+
+            $("#interface").click(function(){
+                $(".modal-content").css("color", "white")
+
+                $(".modal-content").css("background-image", "url(img/code.jpg)");
+                $(".modal-content").css("background-size", "1220px 540px");
+
+                $("#p1").text("Duas interfaces existem no GardenTech. Uma delas é uma interface física que conta com leds verdes e vermelhos que indicam se o sistema está funcionando apropriadamente ou não. Há também um led indicador do nível de água no reservatório. A outra interface é a usada pelo usuário para controlar o sistema. Ela consiste numa página HTML que recebe por PHP as informações coletadas palo módulo controlador e ebxibe na página como um site comum, facilitando a utilização pelo usuário.");
+                $("#p2").text(""); 
+                $("#img2").hide();   
+            })
+
+            $("#resultados").click(function(){
+                $(".modal-content").css("color", "rgba(250,250,250, 0.8)");
+                $(".modal-content").css("background-image", "url(img/results.jpeg)");
+                $(".modal-content").css("background-size", "1200px 700px");
+
+                $("#p1").text("Já nos primeiros protótipos tivemos resultados bem interessantes, mas alguns ruins também. No estado de desenvolvimento atual do GardenTech, os resultados tem sido muito bons com diversas espécies apresentando desenvolvimento tão bom quanto ou até melhor que em condições naturais. Espécies como pimentas e alface adaptaram-se incrivelmente bem e seguimos testando cada vez mais espécies e observando resultados cada vez mais promissores.");
+                $("#p2").text(""); 
+                $("#img2").hide();   
+            })
+            $("#especies").click(function(){
+                $(".modal-content").css("color", "rgba(250,250,250, 0.8)")
+                $(".modal-content").css("background-image", "url(img/plantaaa.jpg)");
+                $(".modal-content").css("background-size", "1220px 620px");
+
+                $("#p1").text("A fim de testarmos a eficiência de nosso projeto, plantamos diversos tipos de plantas de pequeno porte, entre elas estão o feijão, alface, salsa, cebolinha, cenoura, morango, pimentas, batata, entre outras. Todas essas são de amplo acesso em todo o Brasil e no mundo no geral, o que acabou por gerar dados consistentes se comparados a de outros locais. Procuramos testar as espécies mais variadas e assim ter certeza que é possível coltivar a maior quantidade de espécies possível.");
+                $("#p2").text("");    
+                $("#img2").hide();
+            })  
+            $("#prototipo").click(function(){
+                $(".modal-content").css("color", "#343439")
+                $(".modal-content").css("background-image", "none");
+                $(".modal-content").css("background-size", "1100px 500px");
+                $(".modal-content").css("background", "linear-gradient(to bottom, #2E8B57, greenyellow)");
+
+                $("#p1").text("Atualmente existem duas versões do GardenTech. A primera é o nosso protótipo inicial e foi onde realizamos todos os testes até agora. Temos também uma segunda versão que aprimora o sistema e o torna incrivelmente mais compacto, assim facilitando ainda mais a utilização em residências pequenas e trazendo a produção de alimentos para espaços cada vez mais improváveis.");
+                $("#p2").text("");
+                $("#img2").attr("src", "img/gardentech3d.png");
+                $("#img2").attr("width", "195px");
+                $("#img2").attr("height", "130px");
+                $("#img2").css("float", "right");
+                $("#img2").css("border-radius", "50%");
+                $("#img2").show();
+            })
+
+
+
+
+        });
+
+
+
+    </script>
+    
+
+</head>
+
+
+<body >
+    <div id="container" style = "height: 768px">
+
+        <div id="logo">
+            <img src="img/icofolha.png" width="112px" height="156px"/>
+            <img src="img/titulo.png"/>
+        </div>
+
+        <div id="topicos1">
+        <div class= "topicos" id="crescimentoVegetal">Crescimento Vegetal</div>
+        <br><br><br>
+        <div class="topicos" id="iluminacao">Iluminação</div>
+        <br><br><br>
+        <div class="topicos" id="irrigacao">Irrigação</div>
+        <br><br><br>
+        <div class="topicos" id="temperatura">Temperatura</div>
+        <br><br><br>
+        </div>
+        
+        <div id="topicos2">
+        <div class="topicos" id="interface">Interface</div>
+        <br><br><br>
+        <div class="topicos" id="resultados">Resultados</div>
+        <br><br><br>
+        <div class="topicos" id="especies">Espécies</div>
+        <br><br><br>
+        <div class="topicos" id="prototipo">Protótipo</div>
+        <br><br><br>
+        </div>
+
+        
+
+
+
+
+        
+        
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">x</span>
+                
+                <p id="p1">Parágrafo explicativo</p>
+                <p id="p2">Parágrafo explicativo</p>
+                <p>Para mais informações a respeito dos pontos exibidos, basta escanear o código qr abaixo e ter acesso a todo o trabalho escrito.</p>
+                <img src="img/static_qr_code_without_logo.jpg" width="112.5px" height="112.5px">
+                <img id="img2" src="#"/>
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+    
+</body>
+
+</html>

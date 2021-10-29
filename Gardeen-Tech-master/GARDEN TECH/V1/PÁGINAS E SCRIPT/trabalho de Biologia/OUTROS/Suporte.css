@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding:0;
+}
+header{
+    width: 100%;
+    height: 260px;
+    border-bottom: 60px solid black;
+    background-color: #2E8B57;
+     
+    background: linear-gradient(to bottom, #2E8B57, greenyellow);
+    
+    
+}
+header nav ul li span:hover {
+    color: greenyellow;
+}
+.container{
+    width: 970px;
+    height: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+header>.container{
+    width: 971px;
+    
+    
+}
+header>div>div> img:nth-child(4){
+width: 140px;
+    position: relative;
+    top: -14px;
+    margin-bottom: -30px;
+    
+
+    
+}
+#lado1{
+    width: 50%;
+   
+    float: left;
+    
+}
+#lado2{
+    text-align: right;
+   width: 50%;
+    
+    float: left;
+}
+#lado3{
+    
+   width: 50%;
+    float: left;
+}
+#lado4{
+   
+    width: 50%;
+    float: left;
+    text-align: right;
+   
+}
+
+.logo{
+ width: 165px;
+    height: 165px;
+    
+    margin-top: 20px;
+     -webkit-transition: all .9s ease;
+	-moz-transition: all .9s ease;
+	-ms-transition: all .9s ease;
+	-o-transition: all .9s ease;
+	transition: all .99s ease;
+    float: left;
+}
+.logo img:nth-child(4){
+    margin-left: 12px;
+    
+}
+.logo:hover{
+    width: 470px;
+     background-image: url(img/suporte.png);
+    -webkit-transition: all .9s ease;
+	-moz-transition: all .9s ease;
+	-ms-transition: all .9s ease;
+	-o-transition: all .9s ease;
+	transition: all .69s ease;
+   
+}
+h1{
+    position: absolute;
+    top:  80px;
+    left: 390px;
+}
+
+/*----------------------------MENU-----------------------------------------------------------------------*/
+
+.bt1{
+ background: #112d29;
+    
+}
+
+.bt2{
+  background: #112d29;
+}
+
+.bt3{
+   background: #112d29;
+}
+
+.bt4{
+     background: #112d29;  
+}
+.bt5{
+    background: #112d29;
+}
+
+#menu{
+    margin-top: 190px;
+    width: 70%;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    top:-20px;
+    position: absolute;
+    left:0;
+    right:0;
+	margin:20px auto;
+	
+	width:100%;
+}
+ 
+nav ul {
+	list-style:none;
+    
+}
+ 
+nav > ul {
+	display:table;
+	width:100%;
+	background:#000;
+	position:relative;
+}
+ 
+nav > ul li {
+	display:table-cell;
+    
+    
+}
+ 
+nav > ul li:last-child{
+    display:table-cell;
+    border-right: 1px solid #000;
+}
+nav > ul > li:hover > ul {
+	display:block;
+	height:100%;
+}
+ 
+nav > ul > li > ul {
+	display:block;
+	position:absolute;
+	background:#000;
+	left:0;
+	
+	overflow:hidden;
+	height:0%;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+ 
+nav > ul li a {
+	color:#fff;
+	display:block;
+	line-height:20px;
+	padding:20px;
+	position: relative;
+	text-align:center;
+	text-decoration:none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+ 
+nav > ul > li > ul > li a:hover {
+	background:#5da5a2;
+}
+ 
+nav > ul > li > a span {
+	background:#174459;
+	display:block;
+	height:100%;
+	width:100%;
+	left:0;
+	position:absolute;
+	top:-55px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+ 
+nav > ul > li > a span .icon {
+	display:block;
+	line-height:60px;
+}
+ 
+nav > ul > li > a:hover > span {
+	top:0;
+}
+ 
+
+h1{
+    font-family: "helvetica";
+    color: #8fbc8f;
+}
+#CabTodo{
+    width: 100%;
+    height: 300px;
+    
+    
+}
+#textoMenu{
+    font-family: "Monotype Corsiva";
+    font-size: 50px;
+    background-color: white;
+    color: darkred;
+    top: 20px;
+    
+}
+/*--------------------------------------------*/
+form{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 90px;
+}

@@ -1,0 +1,58 @@
+<html>
+<head>
+
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+<link href="controle.php">
+<style type="text/css">
+
+body { background: #333; }
+
+h1  { text-align: center; font-family: 'Source Sans Pro', sans-serif; font-size: 6em; color:#eee;  line-height: 63px; margin: 46px 0;}
+
+form.control-panel-frm { margin: 0 auto; text-align: center;}
+
+input.s3d { clear: both;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;-webkit-box-shadow: 0 4px 5px rgba(0,0,0,.3);-moz-box-shadow: 0 4px 5px rgba(0,0,0,.3);box-shadow: 0 4px 5px rgba(0,0,0,.3);display: inline-block !important;font: 700 13px/36px 'Arial', Helvetica, Clean, sans-serif;padding: 10px 47px;width: 225px;position: relative;text-decoration: none;text-shadow: 0 1px 1px rgba(255,255,255,.35);}
+
+input.switchoff {    background: #eb5a5f;    background: -webkit-gradient(linear, 0 0, 0 0, from(#eb5a5f), to(#e13c41));    background: -moz-linear-gradient(#eb5a5f, #e13c41);    background: linear-gradient(#eb5a5f, #e13c41);    border: 0;    color: rgba(69,22,24,1);     }    
+
+input.switchoff:active {    background: #e13c41;    background: -webkit-gradient(linear, 0 0, 0 0, from(#e13c41), to(#eb5a5f));    background: -moz-linear-gradient(#e13c41, #eb5a5f);    background: linear-gradient(#e13c41, #eb5a5f); }
+
+input.turnOn {    background: #58853e;    background: -webkit-gradient(linear, 0 0, 0 0, from(#00CC00), to(#00FF33));    background: -moz-linear-gradient(#00CC00, #00FF33);   background: linear-gradient(#00CC00, #00FF33);    border: 0;    color: rgba(22,33,16,1); }    
+
+input.turnOn:active {     background: #3c592a;    background: -webkit-gradient(linear, 0 0, 0 0, from(#3c592a), to(#58853e));    background: -moz-linear-gradient(#3c592a, #58853e);    background: linear-gradient(#3c592a, #58853e); }
+
+</style>
+
+//200.143.224.103/tecnosfera
+
+</head>
+
+
+<body>
+
+<h1>Control Panel</h1>
+
+
+	<form class="control-panel-frm" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+		<input type='submit'  class="s3d turnOn" name='submitOn' value='Turn LED 1 ON'>
+		<input type='submit' class="s3d switchoff" name='submitOff' value='Turn LED 1 OFF'>
+		<br><br>
+		<input type='submit'  class="s3d turnOn" name='submitOn1'  value='Turn LED 2 ON'>
+		<input type='submit'  class="s3d switchoff"  name='submitOff1' value='Turn LED 2 OFF'>
+		<br><br>
+		<input type='submit'  class="s3d turnOn" name='submitOn2'  value='Turn LED 3 ON'>
+		<input type='submit'  class="s3d switchoff"  name='submitOff2'  value='Turn LED 3 OFF'>
+		<br><br>
+		<input type='submit'  class="s3d turnOn" name='submitOn3'  value='Turn LED 4 ON'>
+		<input type='submit'  class="s3d switchoff"  name='submitOff3'  value='Turn LED 4 OFF'>
+
+
+		<br><br>
+		<input type='submit' class="s3d turnOn"  name='allon' value='Turn ALL LEDs On'>
+		<input type='submit'  class="s3d switchoff"  name='alloff' value='Turn ALL LEDs Off'>
+
+	</form>
+
+</body>
+
+</html>
